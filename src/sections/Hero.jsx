@@ -136,7 +136,7 @@ export const Hero = () => {
             Technologies I work with
           </p>
           <div className="relative overflow-hidden">
-            <div className="flex animate-carousel">
+            <div className="flex animate-carousell">
               {[...skills, ...skills].map((skill, index) => (
                 <div key={index} className="shrink-0 px-8 py-4">
                   <span className="text-xl font-semibold text-(--color-muted-foreground)/50 hover:text-(--color-muted-foreground) transition-colors cursor-default">
