@@ -41,7 +41,7 @@ export const Navbar = () => {
     window.addEventListener("scroll", mblNavImprove);
 
     return () => window.removeEventListener("scroll", mblNavImprove);
-  }, [isMobileMenuOpen, isScrolled, setIsScrolled]);
+  }, [isMobileMenuOpen]);
 
   return (
     <header

@@ -7,7 +7,7 @@ const projects = [
     title: "RPS / RPSLS",
     description:
       "My solution to the Rock Paper Scissors challenge from frontendmentor.io with the ability to choose between two game modes, completely written in Vanilla HTML/CSS/JS.",
-    image: "./public/rps.jpg",
+    image: "/rps.jpg",
     tags: ["Javascript", "CSS", "HTML"],
     link: "https://srenv.github.io/Rock-Paper-Scissor/",
     github: "https://github.com/srenV/Rock-Paper-Scissor",
@@ -16,7 +16,7 @@ const projects = [
     title: "Loophole Landing Page",
     description:
       "Single Page Application version of the Loophole Landing Page challenge from frontendmentor.io with dynamic snippet loading and SPA routing. ",
-    image: "./public/loophole.jpg",
+    image: "/loophole.jpg",
     tags: ["Javascript", "CSS", "HTML"],
     link: "https://github.com/srenV/Loophole-SPA.git",
     github: "https://srenv.github.io/Loophole-SPA/",
@@ -24,7 +24,7 @@ const projects = [
   {
     title: "Room Homepage",
     description: "A simple Homepage built with a small slider.",
-    image: "./public/roomHomepage.jpg",
+    image: "/roomHomepage.jpg",
     tags: ["Javascript", "CSS", "HTML"],
     link: "https://srenv.github.io/Room-Homepage/",
     github: "https://github.com/srenV/Room-Homepage",
@@ -33,7 +33,7 @@ const projects = [
     title: "Pondfolio",
     description:
       "A blank SPA portfolio that was part of a learning challenge in my apprenticeship.",
-    image: "./public/pondfolio.jpg",
+    image: "/pondfolio.jpg",
     tags: ["Javascript", "CSS", "HTML"],
     link: "https://srenv.github.io/Pondfolio/",
     github: "https://github.com/srenV/Pondfolio",
