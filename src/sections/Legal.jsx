@@ -14,7 +14,7 @@ export const Legal = () => {
           {typeof window !== "undefined" && window.innerWidth < 450 ? (
             <HomeIcon />
           ) : (
-            "Zurück zum Portfolio"
+            "Back to Home"
           )}
         </Link>
       </button>
@@ -83,6 +83,7 @@ export const Legal = () => {
           der Website zu gew&auml;hrleisten. Andere Daten k&ouml;nnen zur
           Analyse Ihres Nutzerverhaltens verwendet werden.
         </p>
+
         <h4 className="text-base md:text-xl mt-3 mb-2">
           Welche Rechte haben Sie bez&uuml;glich Ihrer Daten?
         </h4>
@@ -213,6 +214,15 @@ export const Legal = () => {
           &Uuml;bertragung vertraulicher Inhalte (z.B. Anfragen via
           Kontaktformular) zu sch&uuml;tzen.
         </p>
+
+        <h3 className="text-lg md:text-2xl mt-4 mb-3">
+          Zuständige Aufsichtsbehörde
+        </h3>
+        <p>
+          Landesbeauftragte für den Datenschutz Rheinland-Pfalz Hintere Bleiche
+          34 55116 Mainz Telefon: 06131 208-2449 E-Mail:
+          poststelle@datenschutz.rlp.de
+        </p>
         <hr className="text-(--color-primary) mt-6" />
 
         <h2 className="text-xl md:text-3xl mt-6 mb-4">
@@ -245,9 +255,17 @@ export const Legal = () => {
           Versand der E-Mails den Dienst EmailJS (EmailJS Inc., 700 S. Rosemary
           Ave, Suite 204, West Palm Beach, FL 33401, USA). Hierbei werden Ihre
           Daten an die Server von EmailJS übertragen. Die Nutzung erfolgt auf
-          Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an
-          effizienter Kommunikation). EmailJS ist nach dem EU-US Data Privacy
-          Framework zertifiziert.
+          Grundlage von Art. 6 Abs. 1 lit. a DSGVO (Einwilligung). EmailJS ist
+          nach dem EU-US Data Privacy Framework zertifiziert.
+        </p>
+             <br />
+        <p>
+          Einige Skripte und Bibliotheken (z. B. QRCode.js von cdnjs/Cloudflare)
+          werden über externe Content Delivery Networks geladen. Beim Abruf
+          dieser Dateien können technische Verbindungsdaten (z. B. IP‑Adresse)
+          an die Server des CDN‑Anbieters übertragen werden. Details zur
+          Datenverarbeitung durch den jeweiligen CDN‑Anbieter entnehmen Sie
+          bitte den Datenschutzhinweisen des Anbieters.
         </p>
 
         <hr className="text-(--color-primary) mt-6" />

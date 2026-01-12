@@ -36,7 +36,7 @@ export const Footer = () => {
               className="hover:text-(--color-primary) transition-all"
               to={"/legal"}
             >
-              Legal
+              Privacy Policy
             </Link>
           </div>
         </nav>

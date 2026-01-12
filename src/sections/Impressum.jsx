@@ -14,7 +14,7 @@ export const Impressum = () => {
           {typeof window !== "undefined" && window.innerWidth < 450 ? (
             <Home />
           ) : (
-            "Zurück zum Portfolio"
+            "Back to Home"
           )}
         </Link>
       </button>

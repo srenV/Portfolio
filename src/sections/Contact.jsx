@@ -1,13 +1,11 @@
-import {
-  Send,
-  CheckCircle,
-  AlertCircle,
-} from "lucide-react";
+import { Send, CheckCircle, AlertCircle } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/Button";
 import emailjs from "@emailjs/browser";
+import { Link } from "react-router-dom";
 
 export const Contact = () => {
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -147,7 +145,29 @@ export const Contact = () => {
                   }
                 />
               </div>
-
+              {/* only submit if the checkbox is checked */}
+              <div className="flex px-2">
+                <input
+                  type="checkbox"
+                  name="privacy"
+                  id="privacy"
+                  required
+                  className="mr-2 h-5"
+                />
+                <label
+                  htmlFor="privacy"
+                  className="text-sm text-(--color-muted-foreground)"
+                >
+                  I agree to the processing of my personal data in accordance
+                  with the{" "}
+                  <Link
+                    className="text-(--color-primary)/80 hover:text-(--color-primary) transition-all"
+                    to={"/legal"}
+                  >
+                    Privacy Policy
+                  </Link>
+                </label>
+              </div>
               <Button
                 type="submit"
                 className="flex w-full items-center justify-center"
