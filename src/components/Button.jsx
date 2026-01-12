@@ -8,7 +8,7 @@ export const Button = ({className, size = "default", children, ...props}) => {
 
     //pre configuration for different button sizings - default = default
     const sizeClasses = {
-        sm: "px4 py-2 text-sm",
+        sm: "px5 py-2 text-sm",
         default: "px-6 py-3 text-md", //  <-- default size
         lg: "px-8 py-4 text-lg"
     }
