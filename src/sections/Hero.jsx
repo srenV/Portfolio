@@ -16,7 +16,7 @@ const skills = [
 export const Hero = () => {
   return (
     <section
-      id="top"
+      id="home"
       className="relative min-h-screen flex items-center overflow-hidden"
     >
       {/* BG */}

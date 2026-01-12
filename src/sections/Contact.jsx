@@ -1,15 +1,11 @@
 import {
-  Mail,
-  MapPin,
   Send,
   CheckCircle,
   AlertCircle,
-  ChevronUp,
 } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/Button";
 import emailjs from "@emailjs/browser";
-import { HashLink } from "react-router-hash-link";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
