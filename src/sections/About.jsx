@@ -44,7 +44,7 @@ export const About = () => {
             <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-(--color-secondary-foreground)">
               Building our future,
               <span className="font-serif italic font-normal text-white">
-                {" "}
+                <br />
                 step by step.
               </span>
             </h2>

@@ -19,10 +19,11 @@ export const Legal = () => {
         </Link>
       </button>
       <div className="bg-(--color-muted) p-5 md:p-15 rounded-4xl">
-
         <p className="text-sm text-gray-500 italic mb-8 border-l-4 border-(--color-primary) pl-4">
-    Note: As this website is hosted and operated from Germany, the legal notices below are provided in German in accordance with local laws (DSGVO/GDPR).
-  </p>
+          Note: As this website is hosted and operated from Germany, the legal
+          notices below are provided in German in accordance with local laws
+          (DSGVO/GDPR).
+        </p>
         <h1 className="text-2xl md:text-4xl mb-4">
           Datenschutz&shy;erkl&auml;rung
         </h1>
@@ -149,15 +150,22 @@ export const Legal = () => {
           Website ist:
         </p>
         <p>
-          Sören Timo Voigt
+          &#83;&#246;&#114;&#101;&#110;&#32;&#84;&#105;&#109;&#111;&#32;&#86;&#111;&#105;&#103;&#116;
           <br />
-          Am Bruch 8<br />
-          57577 Hamm (Sieg)
+          &#65;&#109;&#32;&#66;&#114;&#117;&#99;&#104;&#32;&#56;
+          <br />
+          &#53;&#55;&#53;&#55;&#55;&#32;&#72;&#97;&#109;&#109;&#32;&#40;&#83;&#105;&#101;&#103;&#41;
         </p>
         <p>
-          Telefon: 017627994268
+          Telefon:{" "}
+          <a href="tel:&#48;&#49;&#55;&#54;&#50;&#55;&#57;&#57;&#52;&#50;&#54;&#56;">
+            &#48;&#49;&#55;&#54; &#50;&#55;&#57;&#57;&#52;&#50;&#54;&#56;
+          </a>
           <br />
-          E-Mail: voigtsren@gmail.com
+          E-Mail:{" "}
+          <a href="mailto:&#118;&#111;&#105;&#103;&#116;&#115;&#114;&#101;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">
+            &#118;&#111;&#105;&#103;&#116;&#115;&#114;&#101;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
+          </a>
         </p>
 
         <h3 className="text-lg md:text-2xl mt-4 mb-3">Speicherdauer</h3>
