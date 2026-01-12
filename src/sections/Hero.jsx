@@ -135,11 +135,12 @@ export const Hero = () => {
           <p className="text-sm text-(--color-muted-foreground) mb-6 text-center">
             Technologies I work with
           </p>
+          {/* here we map trough the skills array and animate it to create a caroussel */}
           <div className="relative overflow-hidden">
-            <div className="flex animate-carousell">
+            <div className="flex animate-carousell w-max">
               {[...skills, ...skills].map((skill, index) => (
-                <div key={index} className="shrink-0 px-8 py-4">
-                  <span className="text-xl font-semibold text-(--color-muted-foreground)/50 hover:text-(--color-muted-foreground) transition-colors cursor-default">
+                <div key={index} className="shrink-0 px-20 py-4">
+                  <span className="text-xl font-semibold text-(--color-muted-foreground)/50 hover:text-(--color-primary) transition-colors cursor-default">
                     {skill}
                   </span>
                 </div>

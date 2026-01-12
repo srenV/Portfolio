@@ -50,7 +50,7 @@ export const About = () => {
             </h2>
 
             {/* Some info paragraphs */}
-            <div className="space-y-4 text-(--color-muted-foreground) animate-fade-in animation-delay-200">
+            <div className="space-y-4 text-(--color-muted-foreground) glas glow-border p-3 rounded-2xl animate-fade-in animation-delay-200">
               <p>
                 I am currently reinventing my professional path as a trainee in
                 Application Development (Fachinformatiker
@@ -89,18 +89,18 @@ export const About = () => {
           </div>
 
           {/* Right Column - Highlights */}
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 gap-6 md:translate-25">
             {highlights.map((item, index) => (
               <div
                 key={index}
-                className="glass p-6 rounded-2xl animate-fade-in "
+                className="glass p-6 rounded-2xl animate-fade-in hover:scale-105 hover:shadow-lg  hover:shadow-orange-500/10 transition-all duration-500"
                 style={{ animationDelay: `${(index + 1) * 100}ms` }}
               >
                 <div className="w-12 h-12 rounded-xl bg-(--color-primary)/10 flex items-center justify-center mb-4 hover:bg-(--color-primary)/20">
                   <item.icon className="w-6 h-6 text-(--color-primary)" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                <p className="text-sm text-(--color-muted-foreground)">
+                <p className="text-sm text-(--color-muted-foreground) mb-10">
                   {item.description}
                 </p>
               </div>
