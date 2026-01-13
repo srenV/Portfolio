@@ -51,7 +51,7 @@ export const Navbar = () => {
     >
       <nav className="relative justify-between container mx-auto px-6 flex items-center ">
         <HashLink
-          to={"/#top"}
+          to={"/#home"}
           className="text-3xl font-bold italic tracking-tight hover:text-(--color-primary) transition-all"
         >
           stv<span className="text-(--color-primary)">.</span>
