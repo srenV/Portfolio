@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Button } from "@/components/Button";
 import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
+import { easeInOut, motion } from "motion/react";
 
 export const Contact = () => {
 
@@ -67,8 +68,8 @@ export const Contact = () => {
       className="relative min-h-screen flex items-center overflow-hidden"
     >
       <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mx-auto max-w-3xl mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-(--color-secondary-foreground)">
+        <div className="text-center mx-auto max-w-3xl mb-6">
+          <h2  className="text-4xl md:text-5xl font-bold  mb-2 animate-fade-in animation-delay-100 text-(--color-secondary-foreground)">
             Let's,
             <span className="font-serif italic font-normal text-white">
               {" "}
@@ -83,8 +84,8 @@ export const Contact = () => {
           </p>
         </div>
 
-        <div className="sm:w-full md:w-5/12 grid gap-12 max-5xl mx-auto ">
-          <div className="glass p-8 rounded-3xl border border-(--color-primary) animate-fade-in animation-delay-300">
+        <motion.div whileInView={{scale: 1.05 , transition: {duration: 0.5}}}  className="w-full md:w-5/12 grid gap-12 max-5xl mx-auto ">
+          <div  className="glass p-8 rounded-3xl border border-(--color-primary) animate-fade-in animation-delay-300 mb-5 md:mb-0">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label
@@ -93,7 +94,8 @@ export const Contact = () => {
                 >
                   Name
                 </label>
-                <input
+                <motion.input
+                whileFocus={{scale: 1.05, ease: easeInOut}}
                   id="name"
                   required
                   placeholder="Your name..."
@@ -112,7 +114,8 @@ export const Contact = () => {
                 >
                   Email
                 </label>
-                <input
+                <motion.input
+                whileFocus={{scale: 1.05, ease: easeInOut}}
                   id="email"
                   required
                   placeholder="your@email.com"
@@ -133,7 +136,8 @@ export const Contact = () => {
                 >
                   Message
                 </label>
-                <textarea
+                <motion.textarea
+                whileFocus={{scale: 1.05, ease: easeInOut}}
                   rows={5}
                   id="message"
                   required
@@ -204,7 +208,7 @@ export const Contact = () => {
           </div>
 
           {/* Contact Info */}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

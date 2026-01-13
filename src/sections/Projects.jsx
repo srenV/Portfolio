@@ -18,8 +18,8 @@ const projects = [
       "Single Page Application version of the Loophole Landing Page challenge from frontendmentor.io with dynamic snippet loading and SPA routing. ",
     image: "/loophole.jpg",
     tags: ["Javascript", "CSS", "HTML"],
-    link: "https://github.com/srenV/Loophole-SPA.git",
-    github: "https://srenv.github.io/Loophole-SPA/",
+    link: "https://srenv.github.io/Loophole-SPA/",
+    github: "https://github.com/srenV/Loophole-SPA.git",
   },
   {
     title: "Room Homepage",

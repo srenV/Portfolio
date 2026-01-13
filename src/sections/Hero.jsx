@@ -1,6 +1,7 @@
 import { Button } from "@/components/Button";
 import { ChevronDown, Github, Linkedin } from "lucide-react";
 import { HashLink } from "react-router-hash-link";
+import { easeInOut, motion } from "motion/react";
 
 const skills = [
   "JavaScript",
@@ -59,7 +60,7 @@ export const Hero = () => {
           {/* Left Column */}
           <div className="space-y-8">
             <div className="animate-fade-in">
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-(--color-primary)">
+              <span className="inline-flex items-center gap-2 w-fit px-4 py-2 rounded-full glass text-sm text-(--color-primary)">
                 <span className="w-2 h-2 bg-(--color-primary) rounded-full animate-pulse" />
                 Software Developer | Apprenticeship
               </span>
@@ -104,13 +105,15 @@ export const Hero = () => {
                   href: "https://www.linkedin.com/in/soren-timo-voigt/",
                 },
               ].map((social, index) => (
-                <a
+                <motion.a
                   key={index}
                   href={social.href}
                   className="p-2 rounded-full glass hover:bg-(--color-primary)/10 hover:text-(--color-primary) transition-all duration-300"
+                  whileHover={{scale: 1.5, transition: {duration: 0.01}, ease: easeInOut}}
+                  
                 >
                   {<social.icon className="w-5 h-5 " />}
-                </a>
+                </motion.a>
               ))}
             </div>
           </div>
@@ -118,13 +121,13 @@ export const Hero = () => {
           <div className="relative animate-fade-in animation-delay-300">
             {/* Profile Img */}
             <div className="relative max-w-md mx-auto ">
-              <div className="relative glass rounded-3xl p-2 glow-border">
+              <motion.div whileHover={{scale: 1.1}} className="relative glass rounded-3xl p-2 glow-border">
                 <img
                   src="/profile-pixel.png"
                   alt="Sören Timo Voigt"
                   className="w-full object-cover rounded-2xl"
                 />
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
