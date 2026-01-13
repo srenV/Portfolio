@@ -105,22 +105,20 @@ export const Hero = () => {
                   href: "https://www.linkedin.com/in/soren-timo-voigt/",
                 },
               ].map((social, index) => (
-                <motion.a
+                <a
                   key={index}
                   href={social.href}
                   className="p-2 rounded-full glass hover:bg-(--color-primary)/10 hover:text-(--color-primary) transition-all duration-300"
-                  whileHover={{scale: 1.5, transition: {duration: 0.01}, ease: easeInOut}}
-                  
                 >
                   {<social.icon className="w-5 h-5 " />}
-                </motion.a>
+                </a>
               ))}
             </div>
           </div>
           {/* Right Column */}
-          <div className="relative animate-fade-in animation-delay-300">
+          <motion.div whileInView={{opacity:1, transition: {duration: 1}}} className="relative opacity-0">
             {/* Profile Img */}
-            <div className="relative max-w-md mx-auto ">
+            <div className="relative max-w-md mx-auto">
               <motion.div whileHover={{scale: 1.1}} className="relative glass rounded-3xl p-2 glow-border">
                 <img
                   src="/profile-pixel.png"
@@ -129,7 +127,7 @@ export const Hero = () => {
                 />
               </motion.div>
             </div>
-          </div>
+          </motion.div>
         </div>
 
         {/* Skills Section */}
