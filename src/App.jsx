@@ -10,6 +10,7 @@ import { Contact } from "@/sections/Contact";
 import { Impressum } from "@/sections/Impressum";
 import { Legal } from "@/sections/Legal";
 
+
 // Routing + Hilfs-Komponente
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ScrollToTop } from "./components/ScrollToTop";

@@ -61,7 +61,7 @@ export const Hero = () => {
           <div className="space-y-8">
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 w-fit px-4 py-2 rounded-full glass text-sm text-(--color-primary)">
-                <span className="w-2 h-2 bg-(--color-primary) rounded-full animate-pulse" />
+                <span className="w-2 h-2 bg-(--color-primary) rounded-full animate-ping" />
                 Software Developer | Apprenticeship
               </span>
             </div>
@@ -116,7 +116,7 @@ export const Hero = () => {
             </div>
           </div>
           {/* Right Column */}
-          <motion.div whileInView={{opacity:1, transition: {duration: 1}}} className="relative opacity-0">
+          <motion.div whileInView={{opacity:1, transition: {duration: 1}, translateY: 40}} className="relative -translate-y-10 opacity-0">
             {/* Profile Img */}
             <div className="relative max-w-md mx-auto">
               <motion.div whileHover={{scale: 1.1}} className="relative glass rounded-3xl p-2 glow-border">
